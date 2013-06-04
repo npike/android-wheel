@@ -77,6 +77,8 @@ public class WheelScroller {
     private float lastTouchedY;
     private boolean isScrollingPerformed;
 
+	private int mWheelHeight;
+
     /**
      * Constructor
      * @param context the current context
@@ -90,6 +92,10 @@ public class WheelScroller {
 
         this.listener = listener;
         this.context = context;
+    }
+    
+    public void setWheelHeight(int height) {
+    	mWheelHeight = height;
     }
     
     /**
